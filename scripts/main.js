@@ -1,26 +1,27 @@
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Set current year
+document.addEventListener("DOMContentLoaded", function () {
+    // Set current year and last modified date
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").textContent = currentYear;
-
-    // Set last modified date
     const lastModifiedDate = document.lastModified;
     document.getElementById("lastModified").textContent = `Last modified: ${lastModifiedDate}`;
 
     // Hamburger menu functionality
-    const hamburger = document.querySelector('.hamburger'); // Select the hamburger button
-    const nav = document.querySelector('nav');              // Select the nav element
+    const hamburger = document.getElementById("hamburger"); // Select the hamburger button
+    const navLinks = document.getElementById("nav-links");  // Select the navigation menu
+    const menuItems = document.querySelectorAll(".nav-link"); // Select all nav links
+    const currentLocation = window.location.href; // Get current page URL
 
-    // Add click event to the hamburger button
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('show');  // Toggle the 'show' class on the nav
-        
-        // Toggle between hamburger (☰) and close (✖) symbols
-        if (hamburger.textContent === "☰") {
-            hamburger.textContent = "✖"; // Change to X
-        } else {
-            hamburger.textContent = "☰"; // Change back to hamburger
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰";
+        });
+    }
+
+    // Highlight active page
+    menuItems.forEach(item => {
+        if (item.href === currentLocation) {
+            item.classList.add("active");
         }
     });
 
@@ -72,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
             technology: [
                 'C#'
             ],
-            completed: true
+            completed: false
         },
         {
             subject: 'WDD',
@@ -102,82 +103,49 @@ document.addEventListener("DOMContentLoaded", function() {
             ],
             completed: false
         }
-    ]
-    
-    function displayCourses(courses) {
-    
+    ]``
+
+    const container = document.getElementById("third-container-i");
+    const courseCountDisplay = document.getElementById("course-count");
+
+    // Function to display courses
+    function displayCourses(filter) {
+        container.innerHTML = ""; // Clear container
+        let filteredCourses = courses;
+
+        if (filter !== "All") {
+            filteredCourses = courses.filter(course => course.subject === filter);
+        }
+
+        // Count the courses and display count
+        const courseCount = filteredCourses.length;
+        courseCountDisplay.textContent = `Total ${filter} Courses: ${courseCount}`;
+
+        // Create a grid container
+        const gridContainer = document.createElement("div");
+        gridContainer.classList.add("grid-container");
+
+        filteredCourses.forEach(course => {
+            const courseElement = document.createElement("div");
+            courseElement.textContent = `${course.subject} ${course.number}`;
+            courseElement.classList.add("course-card");
+
+            // Apply different styles if course is completed
+            if (course.completed) {
+                courseElement.classList.add("completed");
+            }
+
+            gridContainer.appendChild(courseElement);
+        });
+
+        container.appendChild(gridContainer);
     }
-    
-    const all = document.querySelector('.all');
-    const allContainer = document.querySelector('#allcourses');
-    
-    all.addEventListener('click', () => {
-        // allcourses.style.display= 'grid';
-        // csecourses.style.display= 'none';
-        // wddcourses.style.display= 'none';
-    
-        allContainer.innerHTML = '';
-    
-        courses.forEach(function(course){
-    
-            const h3 = document.createElement('h3');
-            h3.textContent = course.subject + ' ' + course.number;
-            h3.setAttribute('class', 'coursenames')
-            allContainer.append(h3);
-        
-            if (course.completed === true) {   
-                h3.classList.add('mark');
-            }
-        })
-    });
-    
-    
-    const cse = document.querySelector('.cse');
-    // const cseContainer = document.querySelector('#csecourses');
-    
-    cse.addEventListener('click', () => {
-        // allcourses.style.display= 'none';
-        // csecourses.style.display= 'grid';
-        // wddcourses.style.display= 'none';
-    
-        allContainer.innerHTML = '';
-    
-        const done = courses.filter(course => course.subject === "CSE");
-        done.forEach(function(course){
-    
-            const h3 = document.createElement('h3');
-            h3.textContent = course.subject + ' ' + course.number;
-            h3.setAttribute('class', 'coursenames')
-            allContainer.append(h3);
-        
-            if (course.completed === true) { 
-                h3.classList.add('mark');  
-            }
-        })
-    });
-    
-    
-    const wdd = document.querySelector('.wdd');
-    // const cseContainer = document.querySelector('#csecourses');
-    
-    wdd.addEventListener('click', () => {
-        // allcourses.style.display= 'none';
-        // csecourses.style.display= 'grid';
-        // wddcourses.style.display= 'none';
-    
-        allContainer.innerHTML = '';
-    
-        const done = courses.filter(course => course.subject === "WDD");
-        done.forEach(function(course){
-    
-            const h3 = document.createElement('h3');
-            h3.textContent = course.subject + ' ' + course.number;
-            h3.setAttribute('class', 'coursenames')
-            allContainer.append(h3);
-        
-            if (course.completed === true) {   
-                h3.classList.add('mark');
-            }
-        })
-    });
+
+    // Event listeners for course filter buttons
+    document.getElementById("all-btn").addEventListener("click", () => displayCourses("All"));
+    document.getElementById("cse-btn").addEventListener("click", () => displayCourses("CSE"));
+    document.getElementById("wdd-btn").addEventListener("click", () => displayCourses("WDD"));
+
+    // Initial display of all courses
+    displayCourses("All");
 });

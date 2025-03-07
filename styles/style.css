@@ -35,10 +35,12 @@ nav a{
 nav a:hover {
     color: rgb(184, 127, 28);
 }
-a.active {
-    color: red;  /* Change text color to highlight the active page */
-    font-weight: bold;  /* Optionally make it bold */
-    text-decoration: underline;}
+
+  .nav-link.active {
+    color: #007BFF; /* Change color */
+    
+  }
+  
     
 .third-container{
     display: flex;
@@ -164,15 +166,50 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
-
-h3.mark::before {
-    content: '✔';
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 courses in a row */
+    gap: 10px;
+    padding: 10px;
 }
 
-h3.mark{
-    background-color: #fff;
-    color: black;
+.course-card {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(54, 48, 48);
+    color: white;
+    border-radius: 5px;
 }
+
+.completed {
+    background-color: rgb(156, 13, 13);
+    color: rgb(241, 237, 237);
+}
+
+
+
+
+/* Button Styling */
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+.btn-container{
+   
+    color: aqua;
+    text-align: center  ;
+    margin: 0;}
 
 
 /* Mobile-specific styles using media query */
@@ -260,17 +297,7 @@ header {
     background-color: #1a1a48;
     color: white;
 }
-.nav-link {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  .nav-link.active {
-    color: white;
-    background-color: blue;
-    border-radius: 5px;
-  }
-  
+.grid-container {
+    grid-template-columns: repeat(1,1fr);
+}
 }
