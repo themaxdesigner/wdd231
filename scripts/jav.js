@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             item.classList.add("active");
         }
     });
-
     // Course filtering functionality
     const courses = [
         { subject: 'CSE', number: 110, title: 'Introduction to Programming', credits: 2, certificate: 'Web and Computer Programming', description: 'This course introduces programming fundamentals.', technology: ['Python'], completed: true },
