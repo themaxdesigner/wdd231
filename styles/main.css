@@ -40,6 +40,9 @@ nav a:hover {
     color: #007BFF; /* Change color */
     
   }
+  .home{
+    color: rgb(2, 2, 48);
+    margin-left: 30px;  }
   
     
 .third-container{
