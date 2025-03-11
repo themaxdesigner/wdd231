@@ -5,25 +5,40 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedDate = document.lastModified;
     document.getElementById("lastModified").textContent = `Last modified: ${lastModifiedDate}`;
 
-    // Hamburger menu functionality
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-    const menuItems = document.querySelectorAll(".nav-link");
-    const currentLocation = window.location.href;
+    // // Hamburger menu functionality
+    // const hamburger = document.getElementById("hamburger");
+    // const navLinks = document.getElementById("nav-links");
+    // const menuItems = document.querySelectorAll(".nav-link");
+    // const currentLocation = window.location.href;
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("show");
-            hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰";
-        });
-    }
-
+    // if (hamburger && navLinks) {
+    //     hamburger.addEventListener("click", () => {
+    //         navLinks.classList.toggle("show");
+    //         hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰";
+    //     });
+    // }
+    const hamburger = document.querySelector('.hamburger'); // Select the hamburger button
+    const nav = document.querySelector('nav'); // Select the nav element
+    const menuItems = document.querySelectorAll('nav a'); // Select all navigation links
+    
+    // Add click event to the hamburger button
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('show'); // Toggle the 'show' class on the nav
+    
+        // Toggle between hamburger (☰) and close (✖) symbols
+        hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰";
+    });
+    
     // Highlight active page
+    const currentLocation = window.location.href;
     menuItems.forEach(item => {
         if (item.href === currentLocation) {
             item.classList.add("active");
+        } else {
+            item.classList.remove("active"); // Remove active class from other links
         }
     });
+    
     // Course filtering functionality
     const courses = [
         { subject: 'CSE', number: 110, title: 'Introduction to Programming', credits: 2, certificate: 'Web and Computer Programming', description: 'This course introduces programming fundamentals.', technology: ['Python'], completed: true },
@@ -78,3 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial display of all courses
     displayCourses("All");
 });
+
+
+    
