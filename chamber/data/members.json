@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lagos Tech Hub",
+    "address": "12 Innovation Road, Victoria Island, Lagos",
+    "phone": "+234 810 987 6543",
+    "website": "https://lagostechhub.com",
+    "image": "images/imgi.webp",
+    "membership": 3
+  },
+  {
+    "name": "Eko Logistics",
+    "address": "45 Cargo Terminal, Ikeja, Lagos",
+    "phone": "+234 815 234 5678",
+    "website": "https://ekologistics.com",
+    "image": "images/imgii.webp",
+    "membership": 2
+  },
+  {
+    "name": "Lekki Fashion House",
+    "address": "22 Elegance Street, Lekki Phase 1, Lagos",
+    "phone": "+234 803 456 7890",
+    "website": "https://lekkifashion.com",
+    "image": "images/imgiii.webp",
+    "membership": 1
+  },
+  {
+    "name": "Yaba Digital Solutions",
+    "address": "11 Tech Plaza, Yaba, Lagos",
+    "phone": "+234 807 567 8901",
+    "website": "https://yabadigital.com",
+    "image": "images/imgiv.webp",
+    "membership": 3
+  },
+  {
+    "name": "Epe Agro Ventures",
+    "address": "88 Farm Estate, Epe, Lagos",
+    "phone": "+234 809 234 8765",
+    "website": "https://epeagro.com",
+    "image": "images/agro.webp",
+    "membership": 2
+  },
+  {
+    "name": "Surulere Clothing",
+    "address": "15 Designer Lane, Surulere, Lagos",
+    "phone": "+234 806 890 4321",
+    "website": "https://surulereclothing.com",
+    "image": "images/clothing.webp",
+    "membership": 1
+  },
+  {
+    "name": "Ikeja Realty Group",
+    "address": "67 Property Lane, Ikeja GRA, Lagos",
+    "phone": "+234 812 345 6789",
+    "website": "https://ikejarealty.com",
+    "image": "images/imgxx.webp",
+    "membership": 3
+  }
+]

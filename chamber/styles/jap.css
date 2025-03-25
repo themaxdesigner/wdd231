@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+header{
+  display: grid;
+  grid-template-columns: auto 44px;
+  align-items: end;
+  background-color: #050a3a;
+  color: white;
+  font-size: 25px;}
+nav{
+  background-color: #440112;
+}
+#myButton::before{
+  content: '\2630';
+}
+#myButton{
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: rgb(218, 207, 207);
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: .25em 2vw;
+
+   
+}
+ul.menuLinks li a {
+ 
+  display: block;
+  padding: .75em 2vw;
+  color: rgb(205, 205, 212); 
+  text-decoration: none;
+  font-size: 16px;
+
+
+}
+ul.menuLinks li.current-menu-item a{
+ color: red;
+}
+ul.menuLinks{
+
+  list-style-type: none;
+}
+#myButton.open::before{
+  content:'x'; 
+}
+nav{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+nav ul{
+  overflow: hidden;
+}
+nav.open{
+  grid-template-rows: 1fr;
+}
+h1{
+  background-color: rgb(194, 66, 115);
+text-align: center;
+}
+
+
+@media only screen and (min-width: 38rem){
+  #myButton{
+    display: none;
+  }
+  ul.menuLinks, ul.menuLinks.open{
+    display: flex;
+    justify-content: flex-end;
+  }
+  ul.menuLinks a:hover{
+    color: orange;
+  }
+  nav{
+    grid-template-rows: 1fr;
+  }
+  header{
+    display: block;
+    padding: 30px;
+  }
+}
+

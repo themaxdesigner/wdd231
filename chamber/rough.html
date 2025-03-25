@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Directory - Lagos Chamber of Commerce">
+    <meta property="og:title" content="Business Directory | Lagos Chamber of Commerce">
+    <meta property="og:description" content="Explore local businesses, network, and grow with Lagos Chamber of Commerce.">
+    <title>Business Directory | Lagos Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/rough.css">
+    <script defer src="scripts/rough.js"></script>
+</head>
+<body>
+
+  <header>
+    <span> Lagos Chamber of Commerce </span>
+    <button id="myButton"></button>
+  </header>
+
+  <nav id="animateme">
+    <ul class="menuLinks">
+        <li><a href="index.html" title="home">Home</a></li>
+        <li class="current-menu-item"><a href="#">Directory</a></li>
+        <li><a href="membership.html" title="Service">Join</a></li>
+        <li><a href="discover.html" title="History">Discover</a></li> 
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="directory-controls">
+        <button id="gridView" class="view-btn active">Grid View</button>
+        <button id="listView" class="view-btn">List View</button>
+    </div>
+    
+    <section id="business-list" class="grid-view">
+        <!-- Data from JSON will load here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section contact-info">
+            <h3>Lagos Chamber of Commerce</h3>
+            <p>Email: <a href="mailto:info@lagoschamber.org">info@lagoschamber.org</a></p>
+            <p>Phone: <a href="">+23499999</a></p>
+        </div>
+
+        <div class="footer-section social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section legal-info">
+            <p>&copy; <span id="year"></span> Lagos Chamber of Commerce. All rights reserved.</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+ 
+  </script>
+</body>
+</html>
