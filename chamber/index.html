@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Igbineweka Osamuyimen Emmanuel">
+    <meta name="description" content="Igbineweka Osamuyimen Emmanuel WDD231 Directory Page">
+    <meta property="og:title" content="Business Directory | Lagos Chamber of Commerce">
+    
+    <meta property="og:image" content="https://github.com/themaxdesigner/wdd231/chamber/images/main-image">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://themaxdesigner.github.io/wdd231/chamber/directory.html"> 
+
+    <title>Home Page | Lagos Chamber of Commerce</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+ 
+    <header>
+        <span>Lagos Chamber Of Commerce</span>
+        <button id="myButton"></button>
+    </header>
+
+    <nav id="animateme">
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="membership.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Enhancing Businesses in Lagos State through a Digital Platform</h1>
+                <p>Become a member of the Lagos Chamber of Commerce to broaden your connections, unlock valuable resources, and accelerate your business growth.</p>
+                <button class="cta-button">Join Now</button>
+            </div>
+            <div class="hero-image-container">
+                <img src="images/img-home.webp" alt="Business Networking" class="home-image">
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="events-section">
+                <h2 class="section-title">Events</h2>
+                <p id="events">Loading events...</p>
+            </div>
+            <div class="weather-section">
+                <h2 class="section-title">Current Weather</h2>
+                <p id="weather">Loading weather...</p>
+            </div>
+            <div class="forecast-section">
+                <h2 class="section-title">Weather Forecast</h2>
+                <p id="forecast">Loading forecast...</p>
+            </div>
+        </section>
+        
+        <section class="business-listings">
+            <h2 class="section-title">Business Listings</h2>
+
+            <div class="business-card">
+                <p><strong>Dglobal</strong><br>Email: Dglobal@gmail.com<br>Phone: 800-555-1234<br>URL: mybusiness.com</p>
+            </div>
+
+            <div class="business-card">
+                <p><strong>Jamestech</strong><br>Email: jamestech@gmail.com<br>Phone: 800-555-1234<br>URL: mybusiness.com</p>
+            </div>
+
+            <div class="business-card">
+                <p><strong>Kingkliss</strong><br>Email: Kingkliss@gmail.com<br>Phone: 800-555-1234<br>URL: mybusiness.com</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h2>Lagos Chamber of Commerce</h2>
+                <p>Email: <a href="#">info@lagoschamber</a></p>
+                <p>Phone: <a href="#">+23499999</a></p>
+            </div>
+  
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+  
+            <div class="footer-section legal-info">
+                <p>&copy; <span id="year"></span> Lagos Chamber of Commerce. All rights reserved.</p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </div>  
+    </footer>
+
+    <script defer src="scripts/main.js"></script>
+</body>
+</html>

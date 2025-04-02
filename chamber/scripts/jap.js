@@ -1,12 +1,12 @@
-const hamburgerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('#animateme');
+    const hamburgerElement = document.querySelector('#myButton');
+    const navElement = document.querySelector('#animateme');
 
-hamburgerElement.addEventListener('click', () => {
-  navElement.classList.toggle('open');
-  hamburgerElement.classList.toggle('open');
-  
+    hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+    
 
-});
+    });
 
 document.addEventListener("DOMContentLoaded", function () {
   const businessList = document.getElementById("business-list");
