@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Igbineweka Osamuyimen Emmanuel">
+  <meta name="description" content="Igbineweka Osamuyimen Emmanuel WDD231 Directory Page">
+  <meta property="og:title" content="Business Directory | Lagos Chamber of Commerce">
+  
+  <meta property="og:image" content="https://github.com/themaxdesigner/wdd231/chamber/images/main-image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://themaxdesigner.github.io/wdd231/chamber/directory.html"> 
+
+  <title>Join Page | Lagos Chamber of Commerce</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/join.css">
+  <script defer src="scripts/join.js"></script>
+  <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+
+<header>
+  <span> Lagos Chamber of Commerce </span>
+  <button id="myButton"></button>
+</header>
+
+<nav id="animateme">
+  <ul class="menuLinks">
+      <li><a href="index.html" title="home">Home</a></li>
+      <li><a href="directory.html" title="Service">Directory</a></li>
+      <li class="current-menu-item"><a href="#">Join</a></li>
+      <li><a href="discover.html" title="History">Discover</a></li> 
+
+  </ul>
+</nav>
+
+
+    <main>
+        <section class="membership-form-container">
+            <h2>Become a Member</h2>
+            <p>Join a network of innovative businesses and gain access to exclusive benefits that will help you grow.</p>
+            <form action="thankyou.html" method="get">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="first_name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="last_name" required autocomplete="family-name">
+                </div>
+                <div class="form-group">
+                    <label for="orgTitle">Organizational Title:</label>
+                    <input type="text" id="orgTitle" name="org_title" required autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="businessName">Business Name:</label>
+                    <input type="text" id="businessName" name="business_name" required autocomplete="organization">
+                </div>
+                <div class="form-group">
+                  <label for="membershipLevel">Membership Level:</label>
+                  <select id="membershipLevel" name="membership_level" required>
+                      <option value="" disabled selected>Select Membership Level</option> 
+                      <option value="Free">Non-Profit (Free)</option>
+                      <option value="bronze">Bronze</option>
+                      <option value="silver">Silver</option>
+                      <option value="gold">Gold</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="businessDescription">Business Description:</label>
+                    <textarea id="businessDescription" name="business_description"></textarea>
+                </div>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit" class="submit-btn">Apply Now</button>
+            </form>
+        </section>
+
+        <section class="membership-cards-container">
+            <h2 class="member">Membership Levels</h2>
+            <div class="membership-cards">
+                <div class="membership-card" onclick="showModal('npModal')">
+                    <h3>Non-Profit</h3>
+                    <p>For charitable organizations</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="membership-card" onclick="showModal('bronzeModal')">
+                    <h3>Bronze</h3>
+                    <p>Basic membership benefits</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="membership-card" onclick="showModal('silverModal')">
+                    <h3>Silver</h3>
+                    <p>Extended networking & discounts</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="membership-card" onclick="showModal('goldModal')">
+                    <h3>Gold</h3>
+                    <p>Exclusive business promotions</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="membershipModals">
+            <div id="npModal" class="membership-modal">
+                <div class="modal-content">
+                    <h3>Non-Profit Membership</h3>
+                    <p>No cost for registered charitable organizations.</p>
+                    <ul>
+                        <li>Access to community resources</li>
+                        <li>Networking with local businesses</li>
+                        <li>Participation in charity events</li>
+                    </ul>
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+            <div id="bronzeModal" class="membership-modal">
+                <div class="modal-content">
+                    <h3>Bronze Membership</h3>
+                    <p>Affordable membership for growing businesses.</p>
+                    <ul>
+                        <li>Networking events</li>
+                        <li>Business directory listing</li>
+                        <li>Basic advertising opportunities</li>
+                    </ul>
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+            <div id="silverModal" class="membership-modal">
+                <div class="modal-content">
+                    <h3>Silver Membership</h3>
+                    <p>For businesses looking to expand their reach.</p>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Featured promotions on our website</li>
+                        <li>Priority access to networking events</li>
+                    </ul>
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+            <div id="goldModal" class="membership-modal">
+                <div class="modal-content">
+                    <h3>Gold Membership</h3>
+                    <p>Exclusive for industry leaders.</p>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>VIP networking events</li>
+                        <li>Premium placement in the business directory</li>
+                    </ul>
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section contact-info">
+              <h2>Lagos Chamber of Commerce</h2>
+              <p>Email: <a href="#">info@lagoschamber</a></p>
+              <p>Phone: <a href="#">+23499999</a></p>
+          </div>
+
+          <div class="footer-section social-links">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                  <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                  <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+
+        
+      </div>  
+  </footer>
+
+    <script defer src="scripts/join.js"></script>
+</body>
+</html>
