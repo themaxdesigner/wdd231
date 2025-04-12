@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover local highlights and stats from our chamber members and community." />
+  <title>Discover | Abia Chamber of Commerce</title>
+
+  <link rel="stylesheet" href="styles/discover.css">
+  <script src="scripts/discover.js"></script>
+</head>
+<body>
+   
+  <header>
+    <span> Lagos Chamber of Commerce </span>
+    <button id="myButton"></button>
+  </header>
+
+  <nav id="animateme">
+    <ul class="menuLinks">
+        <li><a href="index.html" title="home">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="membership.html" title="Service">Join</a></li>
+        <li class="current-menu-item"><a href="discover.html">Discover</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+      
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/hero-small.webp" />
+        <img src="images/discovera.webp" alt="Welcome to Abia Chamber of Commerce" loading="lazy" />
+      </picture>
+      <div class="hero-text">
+        <h2>Discover Opportunities in Abia</h2>
+        <a href="join.html" class="cta-button">Join Us Today</a>
+      </div>
+    </section>
+
+    <section class="discover-section container">
+        <div class="gallery">
+          <h3>Explore the City</h3>
+          <div class="gallery-grid">
+            <img src="images/discoverb.webp" alt="City Park" loading="lazy" />
+            <img src="images/discoverc.webp" alt="Downtown Shops" loading="lazy" />
+            <img src="images/discoverd.webp" alt="Cultural Festival" loading="lazy" />
+            <img src="images/discoverf.webp" alt="Library" loading="lazy" />
+            <img src="images/discoverg.webp" alt="Tech Hub" loading="lazy" />
+            <img src="images/discoverh.webp" alt="Community Center" loading="lazy" />
+            <img src="images/discoveri.webp" alt="Tech Hub" loading="lazy" />
+            <img src="images/discoverk.webp" alt="Community Center" loading="lazy" />
+          
+          </div>
+        </div>
+      
+
+      <aside class="sidebar">
+        <aside class="sidebar">
+            <h3>Community Facts</h3>
+            <ul>
+              <li>Population: Over 20 million</li>
+              <li>Founded: 1967 (as a state); history dates back to the 15th century as a Yoruba settlement and later a major colonial port</li>
+              <li>Key Industries: Finance, Technology, Entertainment, Shipping, Trade, Real Estate, Manufacturing</li>
+              <li>Annual Visitors: Over 150,000 (mainly for trade, business, and cultural events)</li>
+              <li>Annual Visitors: Over 2 million (for business, tourism, entertainment, and international events)</li>
+              <li>Notable Landmarks: National Theatre, Lekki Conservation Centre, Freedom Park, Eko Atlantic City, Nike Art Gallery</li>
+              <li>Public Services: Lagos State Teaching Hospital (LASUTH), Lagos State University (LASU), Lagos State Library Board</li>
+              <li>Public Transportation: BRT Bus System, Taxis, Tricycles (Keke NAPEP), Ferries, Ride-hailing Services (e.g., Uber, Bolt)</li>
+              <li>Annual Events: Lagos Carnival, Felabration, Lagos International Trade Fair, Eyo Festival, Art X Lagos</li>
+              <li>Climate: Tropical Wet and Dry Climate with a Rainy Season (April–October), Dry Season (November–March), Average Temperature: 28°C (82°F)</li>
+            </ul>
+            <p><strong>Visits:</strong> <span id="visit-count">0</span></p>
+          </aside>
+          
+        <p><strong>Visits:</strong> <span id="visit-count">0</span></p>
+      </aside>
+    </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+        <p>44 Ikorodu Expressway, Aruna</p>
+        <p>Email: <a href="#">lagos@gmail.com</a> | Phone: <a href="#">+123-456-7890</a></p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h4>Subscribe to our Newsletter</h4>
+        <form action="#" method="POST">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn-submit">Subscribe</button>
+        </form>
+      </div>
+  
+      <div class="footer-social-media">
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+          <img src="image/facebook.avif" alt="Facebook">
+        </a>
+        <a href="https://x.com/?lang=en" aria-label="Twitter" target="_blank">
+          <img src="image/twitter.avif" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
+          <img src="image/instagram.avif" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank">
+          <img src="image/linkedin.avif" alt="LinkedIn">
+        </a>
+      </div>
+      <p>Last updated: <span id="lastModified"></span></p>
+
+  <script>
+    // JavaScript to display last modified date
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+    </div>
+  </footer>
+  
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    let visitDisplay = document.getElementById("visit-count");
+    let numVisits = Number(localStorage.getItem("discover-visits")) || 0;
+    numVisits++;
+    localStorage.setItem("discover-visits", numVisits);
+    visitDisplay.textContent = numVisits;
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Lekki Conservation Centre",
+    "image": "images/lekki.webp",
+    "address": "KM 19, Lekki - Epe Expy, Lekki Peninsula II, Lekki",
+    "description": "A sprawling nature reserve known for its canopy walk, wildlife, and serene atmosphere."
+  },
+  {
+    "title": "Nike Art Gallery",
+    "image": "images/nike-art-gallery.webp",
+    "address": "No. 2, Elegushi Rd, Lekki Phase 1",
+    "description": "One of Nigeria’s largest art galleries showcasing contemporary and traditional works."
+  },
+  {
+    "title": "Freedom Park Lagos",
+    "image": "images/freedom-park.webp",
+    "address": "Broad Street, Lagos Island",
+    "description": "A memorial and leisure park built from a colonial prison, now a hub for culture and events."
+  },
+  {
+    "title": "National Museum Lagos",
+    "image": "images/national-museum.webp",
+    "address": "Awolowo Rd, Ikoyi",
+    "description": "Rich collection of Nigerian art, artifacts, and history, including traditional sculptures."
+  },
+  {
+    "title": "Tarkwa Bay Beach",
+    "image": "images/tarkwa.webp",
+    "address": "Accessible by boat from Lagos Island",
+    "description": "A peaceful beach ideal for surfing, picnicking, and escaping the city hustle."
+  },
+  {
+    "title": "Terra Kulture",
+    "image": "images/terra.webp",
+    "address": "1376 Tiamiyu Savage St, Victoria Island",
+    "description": "Art and cultural center for Nigerian cuisine, theatre, and visual arts."
+  },
+  {
+    "title": "Eko Atlantic City",
+    "image": "images/eko.webp",
+    "address": "Ahmadu Bello Way, Victoria Island",
+    "description": "A planned city and business district on reclaimed land from the Atlantic Ocean."
+  },
+  {
+    "title": "Omenka Gallery",
+    "image": "images/gallery.webp",
+    "address": "24 Ikoyi Crescent, Ikoyi",
+    "description": "Modern gallery with works from leading Nigerian and international artists."
+  }
+]
