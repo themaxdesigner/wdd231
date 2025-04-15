@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+      
+        <title>WDD 131 - Dynamic Web Fundamentals - Igbineweka Osamuyimen Emmanuel</title>
+        <meta name="description" content="Igbineweka Osamuyimen Emmanuel WDD131 Project-Home Page">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="scripts/project.js"></script>
+        
+    </head>
+    <body>
+     
+        <header>
+            <h1 >Healthy Living Community</h1>
+         
+            <nav>
+                <a href="home.html" >Home</a>
+        
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactpage.html">Contact Us</a>
+                
+             
+            </nav>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+            
+    
+        </header>
+        <main>
+        <div>
+            <section class="getintouch-container">
+                <section class="touch-container">
+                <h2 class="get">Get in Touch with Us  </h2>
+                <p class="your-health">Your health journey starts here.</p>
+            </section>
+            </section>
+            <section class="location">
+                <h2>Our Location </h2>
+                <p class="here">We are here to help you live healthier.</p>
+            </section>
+            <div>
+                <section class="location-split">
+                    <section class="locationsite">
+                       
+                        <p class="location-site">Location</p>
+                        <p> Our headquarters is centrally located to serve you better. You can find us at 123 Health Lane, Wellness City, CA 94000. We have designed our space to be welcoming and informative, making it easy for you to access
+                        resources that promote healthy living. We encourage you to visit us and explore what we offer.</p>
+                    </section>
+                    <section>
+                        <section class="contact-form">
+                        <p class="location-site">Contact Form</p>
+                        <p>For inquiries, please fill out our contact form below. Your questions and feedback are important to us, and we aim to respond within 24 hours. The form is designed to streamline your communication with our team,
+                        ensuring that we address your needs promptly and effectively. Don't hesitate to reach out!</p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+    
+            <div class="connect-container">
+                <h2  class="connect">Connect with Us</h2>
+                <p class="your-input">Your input is invaluable to our community.</p>
+            <section>
+                <form method="get" action="review.html">
+                    <fieldset>
+                        
+            
+                       
+                        <select id="productName" name="productName" required>
+                            <option value="" disabled selected>Select a Product ...</option>
+                            <!-- Options will be dynamically populated by JavaScript -->
+                        </select>
+            
+                        <label>Rate Our We Should Serve You</label>
+                        <div id="rating">
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                            <label for="star1">☆</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">☆☆</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">☆☆☆</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">☆☆☆☆</label>
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">☆☆☆☆☆</label>
+                        </div>
+            
+                   
+                        <label >Date of Input</label>
+                        <input type="date" id="installationDate" name="installationDate" required>
+            
+                       
+                        
+            
+                       
+                        <label >Your Review (Optional)</label>
+                        <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+            
+                 
+                        <label>Your Name (Optional)</label>
+                        <input type="text" id="userName" name="userName">
+            
+                        <input type="submit" value="Post Review">
+                    </fieldset>
+                </form>
+            </div>
+
+    
+        </main>
+        <footer>
+            <p> &copy;<span id="currentyear"></span>Osamuyimen-Igbineweka Nigeria  <a href="refrence.html">Site Reference</a></p>
+            <p id="lastModified"> </p>        
+        </footer>
+        <link rel="stylesheet" href="styles/project.css">
+
+    </body>
+    
+    
+    
+
+
+
+</html>

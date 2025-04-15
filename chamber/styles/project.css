@@ -1,0 +1,663 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  
+
+   
+}
+body{
+    background-color: #f4f4f4;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight:   100;
+    font-style: normal;
+      
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #1a1a48;
+    color: white;
+ 
+}
+.hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+}
+nav{
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: auto; /* Pushes navbar to the far right */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+   
+
+}
+nav.show {
+    display: flex;
+}
+
+
+nav a:hover {
+    color: rgb(184, 127, 28);
+}
+
+/* .first-image{
+width: 100%;
+    height: 500px;
+} */
+.first-container {
+    background-image: url("../images/stock.webp"); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: rgb(243, 229, 229); /* Text color for contrast */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    height: 500px;
+}
+.text{
+    margin-top: 3em;
+    padding: 80px;
+    }
+    .journey{
+        font-size: 20px;
+        color: rgb(240, 238, 238);  
+    }
+    .welcome{
+        font-size: 60px;
+        color: rgb(240, 238, 238);
+    }
+.book{
+    border: 2px solid rgb(210, 197, 197);
+    width: 10em;
+    color: rgb(240, 238, 238); 
+    padding: 20px;
+  margin-left: 17em;
+  margin-top: 1em;
+  background-color: black;
+  font-size: 20px;
+}
+.book a{
+    color: white;
+    text-decoration: none;
+}
+.book :hover{
+    color: #2a2acd;
+}
+.second-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+   
+}
+.text-content {
+    margin-left: 5cqb; /* Space between the image and the text */
+    
+}
+.secimg{
+    width: 50%;
+}
+.holistic{
+    margin-top: 2em;
+    font-size: 40px;
+    text-align: center;
+  
+    }
+.access{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.explore{
+    text-align: center;
+    border: 2px solid black;
+    width: 15em;
+    padding: 10px;
+    margin-left:10em;
+
+}
+.explore a{
+    text-decoration: none;
+}
+.explore :hover{
+    color: rgb(21, 65, 103);
+
+}
+.empowering{
+    text-align:center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.together{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    
+}
+.promoting-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.wellbeing-image{
+    width: 20em;
+}
+.promoting{
+    margin-left: 80px; /* Space between the image and the text */
+    width: 700px;
+    margin-top: 50px;
+   
+    flex-direction: column; /* Stack h2 and p vertically */
+    justify-content: center;
+}
+.promotin{
+    font-size: 25px;
+    font-weight: bold;
+}
+.fostering-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+.team{
+    margin-left: 80px; /* Space between the image and the text */
+    width: 700px;
+    margin-top: 50px;
+   
+    flex-direction: column; /* Stack h2 and p vertically */
+    justify-content: center
+}
+.teamimg{
+    width: 30%;
+   
+}
+.team{
+    width: 30em;
+}
+.fostering{
+    font-size: 25px;
+    font-weight: bold;
+}
+.community-container{
+    display: flex;
+    margin-top: 50px;
+
+}
+.community{
+    width: 500px;
+    margin-left: 50px;
+    padding: 80px;
+}
+.community-fitness{
+    font-weight: bold;
+    font-size: 30px;
+}
+.yoga{
+    width: 50%;
+}
+.join-button{
+    border: 2px solid black;
+    width: 70px;
+    text-align: center;
+    margin-left: 100px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;}
+.join-button a{
+    text-decoration: none;
+    color: seashell;
+}
+/* about page styling */
+.our-journey-container{
+    background-image: url("../images/about.webp"); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: rgb(243, 229, 229); /* Text color for contrast */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    height: 400px;
+
+  
+
+
+}
+.journey-text{
+    margin-top: 1em;
+    padding: 30px;
+    font-size: 32m;
+}
+.split-container{
+    display:flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    background-color: black;
+    color: white;
+
+  
+}
+.general{
+width: 400px;
+background-color: #f4f4f4;
+color: black;
+
+}
+.beginning{
+    width: 100%;
+}
+.beginning-text{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 20px;
+    text-align: center;
+}
+.beginning-text-text{
+    font-size: 20px;
+    padding: 10px;
+   
+}
+.health{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color:red;
+
+}
+.passionate{
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    font-size: 30px;
+}
+.expert{
+    width: 20%;
+    padding: 20px;
+  
+
+}
+.expert-container{
+    display: flex;
+   
+}
+.expert-text{
+    width: 500px;
+    margin-left: 100px;
+    padding: 50px;
+    font-size: 20px;
+   
+}
+footer{
+    text-align: center;
+    background-color:rgb(0, 0, 128);
+    color: #fff ;
+    font-size: 30px;
+}
+.community-image{
+    width: 30%;
+}
+.community-text{
+  margin-left: 30px;
+  font-size: 20px;
+  padding: 70px;
+}
+.micheal{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.getintouch-container{
+   
+        background-image: url("../images/contact.webp" ); /* Path to your image */
+        background-size: cover; /* Ensure the image covers the entire background */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        color: rgb(243, 229, 229); /* Text color for contrast */
+        padding: 50px; /* Add padding for spacing */
+        font-size: 24px; /* Adjust as needed */
+        font-weight: bold;
+        text-align: center;
+        height: 400px;
+     
+}
+.touch-container{
+    padding: 50px;
+    font-size: 50px;
+    color: rgb(250, 241, 241);
+}
+.your-health{
+    font-size: 35px;
+    color: black;
+}
+.location{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.here{
+    font-size: 20px;
+}
+.location-split{
+    display: flex;
+    width: 30em;
+    justify-content: space-around;
+    ;
+    margin-top: 50px;
+margin-left:200px;
+font-size: 25px;
+}
+.location-site{
+    font-size: 30px;
+    font-weight:bold;}
+
+   .contact-form{
+    margin-left: 10px;
+   }
+   .locationsite{
+    margin-right: 120px;
+   }
+.connect-container{
+    text-align: center;
+    margin-top: 80px;
+}
+.connect{
+    font-size: 30px;
+}
+form {
+    background-color: #8389b1;
+    padding: 20px;
+
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+   
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4A154B;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#rating {
+    display: flex;
+    gap: 5px;
+}
+
+#rating input {
+    display: none;
+}
+
+#rating label {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#rating input:checked + label {
+    color: rgb(185, 197, 185);
+}
+
+input[type="submit"] {
+    background-color: #4A154B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e1763;
+}
+
+
+.product{
+background-color: rgb(12, 9, 9);
+color: white;
+margin-top: 10px;
+
+padding: 20px;
+max-width: 400px;
+margin: auto;
+text-align: center;
+margin-bottom: 20px;
+
+
+}
+
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+@media screen and (max-width: 540px) {
+    body, html {
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Full width for body */
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #1a1a48;
+        color: white;
+    }
+    /* header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px;
+        
+        color: white;
+     
+    } */
+    
+    
+    nav {
+        display: none; /* Hide the nav links by default on small screens */
+        flex-direction: column;
+        
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav a:hover {
+        color: rgb(184, 127, 28);
+    }
+    
+    .first-container, .our-journey-container, .getintouch-container {
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Reduce padding */
+        width: 100%; /* Full width for containers */
+        margin: 0; /* Remove any default margins */
+    }
+
+    .first-container {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .text {
+        padding: 20px; /* Reduce padding */
+        width: 100%; /* Full width for text */
+        margin: 0; /* Remove margins to prevent overlap */
+    }
+
+    .journey, .welcome {
+        font-size: 18px; /* Adjust font size */
+        width: 100%; /* Full width for text */
+    }
+
+    .book {
+        width: 100%; /* Full width for button */
+        margin: 10px 0; /* Adjust margin */
+        padding: 10px; /* Adjust padding */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .second-container, .promoting-container, .fostering-container, .community-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        margin-top: 20px; /* Adjust margin */
+        width: 100%; /* Full width for containers */
+    }
+
+    .secimg, .community-image, .first-container {
+        width: 100%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure images are block elements */
+    }
+
+    .promoting, .team {
+        margin-left: 0; /* Remove left margin */
+        width: 100%; /* Full width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .fostering, .community-fitness {
+        font-size: 20px; /* Adjust font size */
+        width: 100%; /* Full width for text */
+    }
+
+    .join-button {
+        width: 100%; /* Full width for button */
+        margin: 10px 0; /* Adjust margin */
+        padding: 10px; /* Adjust padding */
+        box-sizing: border-box; /* Include padding in width */
+        text-align: center; /* Center text inside button */
+    }
+
+    .split-container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Adjust padding */
+        width: 100%; /* Full width for split container */
+    }
+
+    .general, .beginning, .expert-text {
+        width: 100%; /* Full width for text */
+        padding: 10px; /* Reduce padding */
+        margin: 0; /* Remove margins */
+    }
+
+    footer {
+        font-size: 20px; /* Adjust font size */
+        padding: 10px; /* Adjust padding */
+        width: 100%; /* Full width for footer */
+    }
+
+    .location-split {
+        flex-direction: column; /* Stack elements vertically */
+        margin-left: 0; /* Remove left margin */
+        font-size: 20px; /* Adjust font size */
+        width: 100%; /* Full width */
+    }
+
+    .locationsite {
+        margin-right: 0; /* Remove right margin */
+        width: 100%; /* Full width */
+    }
+
+    .connect {
+        font-size: 25px; /* Adjust font size */
+        width: 100%; /* Full width */
+    }
+
+    /* Ensure all buttons and links are full width */
+    a, .explore, .book, .join-button {
+        display: block;
+       
+      
+    }
+
+    .explore, .book {
+        width: 50%; /* Full width for the explore button */
+        margin: 10px auto; /* Center the button */
+        padding: 10px; /* Adjust padding */
+        display: block; /* Make it a block element for full width */
+        text-align: center; /* Center text inside button */
+    
+    
+
+}
+
+.teamimg, .yoga, .wellbeing-image{
+    width: 100%;
+}
+.expert{
+    width: 170px;
+    
+    
+}
+.holistic, .empowering{
+    margin-top: 40px;
+}
+.hamburger {
+    display: block; /* Show the hamburger button on mobile */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;   
+}
+.welcome,.journey-text, .get {
+    font-size: 50px;
+}
+.journey{
+font-size: 20px; 
+color: rgb(244, 242, 242); 
+}
+
+}

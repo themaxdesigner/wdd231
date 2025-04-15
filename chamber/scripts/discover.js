@@ -66,7 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
   localStorage.setItem("lastVisit", now);
 
   // Load the 8 cards from JSON and add them to the page
-  fetch("../data/interest.json")
+   fetch("data/interest.json")
+
+
+    
     .then(response => response.json())
     .then(data => {
       const cardContainer = document.querySelector(".cards");

@@ -1,0 +1,94 @@
+{
+  "members": [
+    {
+      "name": "Alice",
+      "age": 28,
+      "activity": "Yoga",
+      "email": "alice@example.com"
+    },
+    {
+      "name": "Bob",
+      "age": 35,
+      "activity": "Running",
+      "email": "bob@example.com"
+    },
+    {
+      "name": "Charlie",
+      "age": 22,
+      "activity": "Cycling",
+      "email": "charlie@example.com"
+    },
+    {
+      "name": "David",
+      "age": 40,
+      "activity": "Swimming",
+      "email": "david@example.com"
+    },
+    {
+      "name": "Eve",
+      "age": 30,
+      "activity": "Weightlifting",
+      "email": "eve@example.com"
+    },
+    {
+      "name": "Frank",
+      "age": 29,
+      "activity": "Walking",
+      "email": "frank@example.com"
+    },
+    {
+      "name": "Grace",
+      "age": 25,
+      "activity": "Yoga",
+      "email": "grace@example.com"
+    },
+    {
+      "name": "Hannah",
+      "age": 33,
+      "activity": "Running",
+      "email": "hannah@example.com"
+    },
+    {
+      "name": "Ivy",
+      "age": 27,
+      "activity": "Cycling",
+      "email": "ivy@example.com"
+    },
+    {
+      "name": "Jack",
+      "age": 34,
+      "activity": "Swimming",
+      "email": "jack@example.com"
+    },
+    {
+      "name": "Kim",
+      "age": 31,
+      "activity": "Weightlifting",
+      "email": "kim@example.com"
+    },
+    {
+      "name": "Leo",
+      "age": 26,
+      "activity": "Walking",
+      "email": "leo@example.com"
+    },
+    {
+      "name": "Mia",
+      "age": 32,
+      "activity": "Yoga",
+      "email": "mia@example.com"
+    },
+    {
+      "name": "Nina",
+      "age": 38,
+      "activity": "Running",
+      "email": "nina@example.com"
+    },
+    {
+      "name": "Oscar",
+      "age": 29,
+      "activity": "Cycling",
+      "email": "oscar@example.com"
+    }
+  ]
+}
