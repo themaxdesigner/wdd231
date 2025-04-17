@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Avocado Toast",
+    "ingredients": ["Whole grain bread", "Avocado", "Salt", "Lemon juice"],
+    "prepTime": "5 mins",
+    "calories": 250
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "ingredients": ["Greek yogurt", "Granola", "Honey", "Berries"],
+    "prepTime": "10 mins",
+    "calories": 300
+  },
+  {
+    "name": "Quinoa Salad",
+    "ingredients": ["Quinoa", "Cucumber", "Tomatoes", "Olive oil"],
+    "prepTime": "15 mins",
+    "calories": 350
+  },
+  {
+    "name": "Veggie Omelette",
+    "ingredients": ["Eggs", "Spinach", "Bell peppers", "Onions"],
+    "prepTime": "10 mins",
+    "calories": 280
+  },
+  {
+    "name": "Chia Seed Pudding",
+    "ingredients": ["Chia seeds", "Almond milk", "Vanilla", "Maple syrup"],
+    "prepTime": "2 hrs",
+    "calories": 200
+  },
+  {
+    "name": "Smoothie Bowl",
+    "ingredients": ["Banana", "Spinach", "Almond milk", "Chia seeds"],
+    "prepTime": "5 mins",
+    "calories": 320
+  },
+  {
+    "name": "Grilled Chicken Wrap",
+    "ingredients": ["Whole grain wrap", "Grilled chicken", "Lettuce", "Hummus"],
+    "prepTime": "10 mins",
+    "calories": 400
+  },
+  {
+    "name": "Zucchini Noodles",
+    "ingredients": ["Zucchini", "Tomato sauce", "Garlic", "Parmesan"],
+    "prepTime": "15 mins",
+    "calories": 220
+  },
+  {
+    "name": "Stuffed Peppers",
+    "ingredients": ["Bell peppers", "Brown rice", "Black beans", "Corn"],
+    "prepTime": "30 mins",
+    "calories": 370
+  },
+  {
+    "name": "Baked Salmon",
+    "ingredients": ["Salmon", "Lemon", "Dill", "Olive oil"],
+    "prepTime": "20 mins",
+    "calories": 450
+  },
+  {
+    "name": "Lentil Soup",
+    "ingredients": ["Lentils", "Carrots", "Celery", "Tomatoes"],
+    "prepTime": "25 mins",
+    "calories": 310
+  },
+  {
+    "name": "Fruit Salad",
+    "ingredients": ["Apple", "Banana", "Orange", "Grapes"],
+    "prepTime": "10 mins",
+    "calories": 180
+  },
+  {
+    "name": "Turkey Lettuce Wraps",
+    "ingredients": ["Ground turkey", "Lettuce", "Soy sauce", "Carrots"],
+    "prepTime": "15 mins",
+    "calories": 330
+  },
+  {
+    "name": "Oatmeal with Berries",
+    "ingredients": ["Oats", "Milk", "Berries", "Honey"],
+    "prepTime": "10 mins",
+    "calories": 290
+  },
+  {
+    "name": "Tofu Stir Fry",
+    "ingredients": ["Tofu", "Broccoli", "Soy sauce", "Garlic"],
+    "prepTime": "15 mins",
+    "calories": 340
+  }
+]
