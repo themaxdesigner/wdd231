@@ -185,8 +185,7 @@ header.thanksHeader::before {
 #close svg, #menu svg, .search svg {
     display: block;
     height: 30px;
-    fill: white;
-}
+  }
 
 #searchButtonContainer {
     display: flex;
@@ -366,9 +365,9 @@ a.active {
   all: unset;
 }
 
-#searchBoxContainer {
+  #searchBoxContainer {
     position: fixed;
-    height:  100%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.981);
     z-index: 100;
@@ -377,34 +376,34 @@ a.active {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    clip-path: circle(0 at 90% -10%);
-    transition: clip-path 0.5s ease;
+    border-radius: 50%;  /* Makes the element round */
+    transform: translate(90%, -10%);  /* Adjust the element's position */
+    transition: transform 0.5s ease;  /* Smooth transition effect for the position */
 }
-#searchBoxContainer.recipeSearchBox {
-  background-color: #7bb15ea2;
-  padding: 2rem 0 0 0;
-  position: relative;
-  clip-path: none;
-  z-index: unset;
-}
-#searchBoxContainer.searchActive {
-    clip-path: circle(150% at 100% 10%);
-}
-.searchContainer input {
-    width: 250px;
-    height: 40px;
-    padding: 6px;
-    margin: 8px 0;
-    font-size: 13px;
-    border: none;
-    outline: 0;
-    font-family: roboto, serif, Arial;
-    border-radius: 30px 0 0 30px;
-    text-indent: 20px;
-}
-.recipeSearchBox input {
-  border: 1px solid var(--dark-text-muted);
-  border-right: none;
+
+  #searchBoxContainer.recipeSearchBox {
+    background-color: #7bb15ea2;
+    padding: 2rem 0 0 0;
+    position: relative;
+    /* clip-path: none; */
+    z-index: unset;
+  }
+  
+  .searchContainer input {
+      width: 250px;
+      height: 40px;
+      padding: 6px;
+      margin: 8px 0;
+      font-size: 13px;
+      border: none;
+      outline: 0;
+      font-family: roboto, serif, Arial;
+      border-radius: 30px 0 0 30px;
+      text-indent: 20px;
+  }
+  .recipeSearchBox input {
+    border: 1px solid var(--dark-text-muted);
+    border-right: none;
 }
 .searchContainer input::placeholder {
     position: relative;
@@ -432,10 +431,7 @@ a.active {
   border: 1px solid var(--dark-text-muted);
   border-right: none;
 }
-.search-icon svg {
-    height: 20px;
-    fill: black;
-}
+
 .search-icon:hover{
     background-color: var(--secondary);
     opacity: .7;
@@ -448,9 +444,7 @@ a.active {
 }
 .close svg{
     display: block;
-    height: 35px;
-    fill: white;
-}
+    }
 
 /* HOME MAIN SECTION */
 #homeMainContainer {
@@ -757,18 +751,6 @@ a.active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ///////////////////////////////////////////////////////////////////////// */
 #filter-section {
   padding: 2rem;
@@ -859,7 +841,7 @@ a.active {
   z-index: 1;
 }
 .info-button svg {
-  fill: white;
+ 
   height: 40px;
   width: 40px;
   background-color: black;
@@ -908,14 +890,12 @@ a.active {
   cursor: pointer;
 }
 .addFavorites svg {
-  /* fill: #ff4000; */
-  fill: #cc3300;
   height: 20px;
   display: inline;
 }
 
 .addFavorites.saved .heart-icon {
-  fill: #cc3000 !important;
+  
   animation: pop .5s  linear forwards;
 }
 @keyframes pop {
@@ -1021,16 +1001,7 @@ a.active {
 }
 .removeFavorites svg {
   height: 20px;
-  fill: white;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1133,12 +1104,6 @@ a.active {
 
 
 
-
-
-
-
-
-
 /* ///////////////////////////////////////////////////////////// */
 #thanksMainContent {
   display: flex;
@@ -1178,16 +1143,6 @@ a.active {
   font-weight: 100;
   color: #444444;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1303,7 +1258,7 @@ footer .brand p {
 }
 
 .social-links svg{
-  fill: white;
+ 
   height: 15px;
 }
 
